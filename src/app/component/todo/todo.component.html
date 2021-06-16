@@ -1,0 +1,8 @@
+<h2>To Do Module</h2>
+<app-input-add [tod]="todos" (onAdded)="addList($event)"></app-input-add>
+<app-search (searchStr)="getStr($event)"></app-search>
+<app-list-show [todo]="todos" [srchT]="searchTitle"></app-list-show>
+
+  <!-- <ng-template #editingTodo>
+    <input type="text" class="todo-item-edit" [(ngModel)]="todo.title" (blur)="doneEdit(todo)" (keyup.enter)="doneEdit(todo)" (keyup.esc)="cancelEdit(todo)"autofocus>
+  </ng-template> -->
